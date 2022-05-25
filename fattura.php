@@ -9,8 +9,8 @@ $prodotto1=$_POST['prodotto1']; //servono per prendere i dati inseriti dall'uten
 $prodotto2=$_POST['prodotto2']; //così tu sti dicendo:vai a prendere la variabile ['prodotto1'] del form e chiamala $prodotto1
 $prodotto3=$_POST['prodotto3'];
 
-$qta1=$_POST['qta1'];
-$qta2=$_POST['qta3'];
+$qta1=$_POST['qta1'];             // uguale ai commenti di prima per qta e per il resto
+$qta2=$_POST['qta3'];                 
 $qta3=$_POST['qta3'];
 
 $PS1=$_POST['PS1'];
@@ -27,7 +27,7 @@ $TotMerce2=$qta2*$PS2;
 $TotMerce3=$qta3*$PS3;
 
 
-if($iva1=10)
+if($iva1=10)                         
 $somma1=$somma1+$TotMerce1;
 else{    
 $somma2=$somma2+$TotMerce1;
@@ -47,10 +47,12 @@ $somma2=$somma2+$TotMerce3;
 
 //con l'isutruzione di sotto stampi una nuova tabella
 //va tutto in fila, da sinistra verso destra, ti crea una tabella in fila, l'importante è avere lo stesso numero di attributi
-echo"<table border=2px align=center>           
+
+ 
+echo"<table border=2px align=center>           //stampo una tabella con tutte le variabili prese nel form 
 <tr>
 <td>prodotto</td>                            
-<td>quantità</td>
+<td>quantità</td>              
 <td>prezzo singolo</td>
 <td>costo tot merce</td>
 <td>IVA %</td>
