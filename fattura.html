@@ -7,8 +7,8 @@
 
     </style>
 </head>
-<body align="center">
-<form action="fattura.php" method="POST">
+<body align="center">                                  <!-- allineo al centro il codice-->        
+<form action="fattura.php" method="POST">               <!-- il METHOD POST mi permette di salvare il contenuto immeso dell'utente in una variabile che poi si collegherà al php --> 
 <table border="2px">
 <tr>
 <td>prodotto</td>
@@ -20,7 +20,7 @@
 <tr>
 
     <td><input type="text" name="prodotto1" id="prodotto1"></td>  <!-- così stai facendo un rettangolino dove l'utente potrà inserire il dato.-->
-    <td><input type="number" name="qta1" id="qta1"></td> <!-- per usare quel dato che l'utente immette, nel php farai una variabile, userail il post e gli dirai il NAME della variabile che andrà a prendere nel form.-->
+    <td><input type="number" name="qta1" id="qta1"></td>     <!-- per usare quel dato che l'utente immette, nel php farai una variabile, userail il post e gli dirai il NAME della variabile che andrà a prendere nel form.-->
     <td><input type="number" name="PS1" id="PS1"></td>
     <td><select name="iva1">
     <option value="10">10%</option>
@@ -57,8 +57,8 @@
             
 </table>
 
-<input type="submit" name="invia">
-<input type="reset" name="reset">
+<input type="submit" name="invia">                        <!-- bottone per l'invio dei dati -->
+<input type="reset" name="reset">                         <!-- bottone per il reset -->
 
 
 
