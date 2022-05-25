@@ -1,0 +1,69 @@
+<DOCTYPE! html>
+<html>
+<head>
+    <h1>ultimo esercizio di ripasso</h1>
+    <style>
+
+
+    </style>
+</head>
+<body align="center">
+<form action="fattura.php" method="POST">
+<table border="2px">
+<tr>
+<td>prodotto</td>
+<td>qta</td>
+<td>prezzo singolo</td>
+<td>IVA %</td>
+</tr>
+
+<tr>
+
+    <td><input type="text" name="prodotto1" id="prodotto1"></td>  <!-- così stai facendo un rettangolino dove l'utente potrà inserire il dato.-->
+    <td><input type="number" name="qta1" id="qta1"></td> <!-- per usare quel dato che l'utente immette, nel php farai una variabile, userail il post e gli dirai il NAME della variabile che andrà a prendere nel form.-->
+    <td><input type="number" name="PS1" id="PS1"></td>
+    <td><select name="iva1">
+    <option value="10">10%</option>
+    <option value="22">22%</option>
+    </select></td>
+    
+
+</tr>
+<tr>
+
+    <td><input type="text" name="prodotto2" id="prodotto2"></td>               <!-- visto che hai 3 prodotti differenti , dovrai fare 3 input type differenti e quindi nel php dovrai richiamarli 3 volte perchè sono 3 variabili differenti-->
+    <td><input type="number" name="qta2" id="qta2"></td>
+    <td><input type="number" name="PS2" id="PS2"></td>
+    <td><select name="iva2">
+        <option value="10">10%</option>
+        <option value="22">22%</option>
+        </select></td>
+        
+        
+</tr>
+<tr>
+
+    <td><input type="text" name="prodotto3" id="prodotto3"></td>
+    <td><input type="number" name="qta3" id="qta3"></td>
+    <td><input type="number" name="PS3" id="PS3"></td>
+    <td><select name="iva3">
+        <option value="10">10%</option>
+        <option value="22">22%</option>
+        </select></td>
+        
+</tr>
+
+
+            
+</table>
+
+<input type="submit" name="invia">
+<input type="reset" name="reset">
+
+
+
+</form>
+
+</body>
+
+</html>
