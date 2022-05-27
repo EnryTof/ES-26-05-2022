@@ -27,19 +27,19 @@ $TotMerce2=$qta2*$PS2;
 $TotMerce3=$qta3*$PS3;
 
 
-if($iva1=10)                         
+if($iva1==10)                         
 $somma1=$somma1+$TotMerce1;
 else{    
 $somma2=$somma2+$TotMerce1;
 }
 
-if($iva2=10)
+if($iva2==10)
 $somma1=$somma1+$TotMerce2;
 else{    
 $somma2=$somma2+$TotMerce2;
 }
 
-if($iva3=10)
+if($iva3==10)
 $somma1=$somma1+$TotMerce3;
 else{    
 $somma2=$somma2+$TotMerce3;
